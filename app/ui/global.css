@@ -7,12 +7,13 @@ body {
 .app {
     display: grid;
     height: 100vh;
-    grid-template-rows: 35% auto; /* 35% space on top, then auto for everything else */
+    grid-template-rows: 10% 25% auto;
+    grid-template-columns: 33.3% 33.3% 33.4%;
 }
 
 main {
-    grid-row: 2; /* Start at the top of the second row (35% down) */
-    justify-self: center; /* Centers horizontally */
+    grid-row: 3; /* Start at the top of the third row (35% down) */
+    grid-column: 2;
     text-align: center;
 }
 
