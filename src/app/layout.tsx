@@ -1,4 +1,4 @@
-import '../app/ui/global.css';
+import '@/styles/global.css';
 
 export const metadata = {
   title: 'dannyochoa',

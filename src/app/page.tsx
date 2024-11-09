@@ -1,14 +1,15 @@
-import SectionsHeader from "../ui/sections-header"
-import Socials from "./socials";
+import './page.css';
+import SectionsHeader from "./components/sections-header";
 
-export default function ContactPage() {
+export default function HomePage() {
     return (
         <div className="app">
             <meta charSet="utf-8"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> 
             <SectionsHeader/>
             <main>
-                <Socials/>
+                <h1>Daniel Ochoa</h1>
+                Software Engineer
             </main>
         </div>
     );
