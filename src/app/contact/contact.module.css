@@ -1,22 +1,36 @@
-.app {
+/* Base grid layout for mobile (default) */
+.grid-container {
     display: grid;
     height: 100vh;
     grid-template-rows: 10% 25% auto;
     grid-template-columns: 33.3% 33.3% 33.4%;
 }
 
-main {
+.header {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+}
+
+.main {
     grid-row: 3; /* Start at the top of the third row (35% down) */
     grid-column: 2;
     text-align: center;
 }
 
 .contact-icon {
-    margin-left: .35em;
-    margin-right: .35em;
+    margin-left: 1em;
+    margin-right: 1em;
     transition: all .2s ease-in-out;
 }
 
 .contact-icon:hover {
     transform: scale(1.25);
+}
+
+/* Large screens (laptops, desktops) */
+@media (min-width: 992px) {
+    .header {
+        grid-column: 3;
+    }
 }
