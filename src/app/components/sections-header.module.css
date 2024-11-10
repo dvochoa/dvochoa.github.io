@@ -1,17 +1,3 @@
-.sections-header {
-    grid-row: 2;
-    grid-column: 3;
-    justify-self: center;
-}
-
-a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-}
-
 #first {
     margin-left: 0; /* Remove left margin that is added by the anchor selector */
 }
@@ -20,12 +6,18 @@ a {
     margin-right: 0; /* Remove right margin that is added by the anchor selector */
 }
 
-.hover-underline-animation {
+.header-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    margin-right: 0.5em;
+    margin-left: 0.5em;
     display: inline-block;
     position: relative;
 }
-  
-.hover-underline-animation::after {
+
+/* Apply an animate underline on hover */
+.header-link:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -38,7 +30,7 @@ a {
     transition: transform 0.25s ease-out;
 }
   
-.hover-underline-animation:hover::after {
+.header-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }

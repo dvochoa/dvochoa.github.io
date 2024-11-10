@@ -1,11 +1,13 @@
-import './sections-header.css';
+import styles from './sections-header.module.css';
 import Link from 'next/link';
 
-export default function SectionsHeader() {
+const SectionsHeader = ({ className }) => {
     return (
-        <div className="sections-header">
-            <Link href="/" className="hover-underline-animation" id="first">Home</Link>
-            <Link href="/contact" className="hover-underline-animation">Contact</Link>
+        <div className={className}>
+            <Link href="/" id={styles.first} className={styles["header-link"]}>Home</Link>
+            <Link href="/contact" id={styles.last} className={styles["header-link"]}>Contact</Link>
          </div>
-      );
-}
+      ); 
+};
+
+export default SectionsHeader
