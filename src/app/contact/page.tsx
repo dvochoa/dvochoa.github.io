@@ -9,11 +9,11 @@ const iconHeight = 60;
 
 export default function ContactPage() {
     return (
-        <div className={styles["grid-container"]}>
+        <div className={`${styles["grid-container"]} h-lvh grid grid-cols-3`}>
             <meta charSet="utf-8"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta> 
-            <SectionsHeader className={styles.header}/>
-            <main className={styles.main}>
+            <SectionsHeader className="row-start-2 col-start-2 lg:col-start-3 justify-self-center"/>
+            <main className="row-start-3 col-start-2 text-center">
                 <Link href="mailto:danny@dannyochoa.net" target="_blank" rel="noopener noreferrer">
                     <Image src="/images/gmail-icon.svg" width={iconWidth} height={iconHeight} alt="Mail icon" className={styles["contact-icon"]}/>
                 </Link>
