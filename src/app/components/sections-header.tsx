@@ -4,8 +4,8 @@ import Link from 'next/link';
 const SectionsHeader = ({ className }) => {
     return (
         <div className={className}>
-            <Link href="/" id={styles.first} className={styles["header-link"]}>Home</Link>
-            <Link href="/contact" id={styles.last} className={styles["header-link"]}>Contact</Link>
+            <Link href="/" className={`${styles["header-entry"]} font-bold inline-block relative ml-0`}>Home</Link>
+            <Link href="/contact" className={`${styles["header-entry"]} font-bold inline-block relative mr-0`}>Contact</Link>
          </div>
       ); 
 };

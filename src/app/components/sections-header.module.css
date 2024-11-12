@@ -1,23 +1,9 @@
-#first {
-    margin-left: 0; /* Remove left margin that is added by the anchor selector */
+.header-entry {
+    margin: 0em 0.5em 0em 0.5em;
 }
 
-#last {
-    margin-right: 0; /* Remove right margin that is added by the anchor selector */
-}
-
-.header-link {
-    color: black;
-    font-weight: bold;
-    text-decoration: none; /* Remove underline */
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-    display: inline-block;
-    position: relative;
-}
-
-/* Apply an animate underline on hover */
-.header-link:after {
+/* Apply an animated underline on hover */
+.header-entry:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -26,11 +12,11 @@
     bottom: 0;
     left: 0;
     background-color: black;
-    transform-origin: bottom right;
+    transform-origin: bottom left;
     transition: transform 0.25s ease-out;
 }
   
-.header-link:hover::after {
+.header-entry:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
