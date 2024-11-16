@@ -1,9 +1,7 @@
 # Workflow to enforce code style
 name: Lint
 
-# Runs on changes to pull requests
-on:
-  pull_request:
+on: pull_request
 
 jobs:
   linting:
