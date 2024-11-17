@@ -1,5 +1,9 @@
+import type { Metadata } from "next";
+
 import styles from "./page.module.css";
 import SectionsHeader from "./components/sections-header";
+
+export const metadata: Metadata = { title: "Home | Danny Ochoa" };
 
 export default function HomePage() {
   return (
