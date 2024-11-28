@@ -1,7 +1,7 @@
 import styles from "./sections-header.module.css";
 import Link from "next/link";
 
-const SectionsHeader = ({ className }) => {
+const SectionsHeader = ({ className }: { className: string }) => {
   return (
     <div className={className}>
       <Link href="/" className={`${styles["header-entry"]} font-bold inline-block relative ml-0`}>
