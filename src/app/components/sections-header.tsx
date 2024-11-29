@@ -7,6 +7,9 @@ const SectionsHeader = ({ className }: { className: string }) => {
       <Link href="/" className={`${styles["header-entry"]} font-bold inline-block relative ml-0`}>
         Home
       </Link>
+      <Link href="/about" className={`${styles["header-entry"]} font-bold inline-block relative`}>
+        About
+      </Link>
       <Link
         href="/contact"
         className={`${styles["header-entry"]} font-bold inline-block relative mr-0`}

@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import styles from "./page.module.css";
 import SectionsHeader from "./components/sections-header";
 
-export const metadata: Metadata = { title: "Home | Danny Ochoa" };
+export const metadata: Metadata = { title: "Home" };
 
 export default function HomePage() {
   return (
-    <div className={`${styles["grid-container"]} grid h-lvh`}>
+    <div className={`${styles["grid-container"]} h-lvh grid`}>
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <SectionsHeader className="row-start-2 lg:col-start-3 justify-self-center" />
