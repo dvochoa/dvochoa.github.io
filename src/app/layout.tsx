@@ -1,10 +1,6 @@
 import "@/styles/global.css";
 
 export const metadata = {
-  title: {
-    template: "%s | Danny Ochoa",
-    default: "Danny Ochoa",
-  },
   description: "Danny Ochoa's personal website",
   icons: {
     icon: [{ url: "/favicon/icon.svg", type: "image/svg+xml" }],

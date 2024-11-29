@@ -13,3 +13,10 @@
 .contact-icon:hover {
   transform: scale(1.25);
 }
+
+/* Large screens (laptops, desktops) */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
