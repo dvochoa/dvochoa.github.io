@@ -1,21 +1,25 @@
-import styles from "./sections-header.module.css";
-import Link from "next/link";
+import LinkWithUnderlineAnimated from "@/components/link-with-underline-animated";
 
 const SectionsHeader = ({ className }: { className: string }) => {
   return (
     <div className={className}>
-      <Link href="/" className={`${styles["header-entry"]} font-bold inline-block relative ml-0`}>
-        Home
-      </Link>
-      <Link href="/about" className={`${styles["header-entry"]} font-bold inline-block relative`}>
-        About
-      </Link>
-      <Link
+      <LinkWithUnderlineAnimated
+        href="/"
+        text="Home"
+        openInNewTab={false}
+        className="mr-4"
+      ></LinkWithUnderlineAnimated>
+      <LinkWithUnderlineAnimated
+        href="/about"
+        text="About"
+        openInNewTab={false}
+        className="mr-4"
+      ></LinkWithUnderlineAnimated>
+      <LinkWithUnderlineAnimated
         href="/contact"
-        className={`${styles["header-entry"]} font-bold inline-block relative mr-0`}
-      >
-        Contact
-      </Link>
+        text="Contact"
+        openInNewTab={false}
+      ></LinkWithUnderlineAnimated>
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import styles from "./about.module.css";
 import SectionsHeader from "@/components/sections-header";
+import LinkWithUnderlineAnimated from "@/components/link-with-underline-animated";
 
 export const metadata: Metadata = { title: "About Me" };
 
@@ -30,13 +30,11 @@ export default function HomePage() {
         <br></br>
         <p className="text-xl">
           Here's my{" "}
-          <Link
+          <LinkWithUnderlineAnimated
             href="/documents/resume.pdf"
-            target="_blank"
-            className={`${styles["header-entry"]} font-bold inline-block relative`}
-          >
-            resume
-          </Link>{" "}
+            text="resume"
+            openInNewTab={true}
+          ></LinkWithUnderlineAnimated>{" "}
           ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
         </p>
       </main>
