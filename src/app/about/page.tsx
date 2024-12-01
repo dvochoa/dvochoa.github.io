@@ -16,17 +16,19 @@ export default function HomePage() {
         <h1 className="text-4xl font-bold">Hey ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h1>
         <br></br>
         <p className="text-xl">Thank you for visiting my website,</p>
-        <p className="text-xl">I hope you like what i've done with the place</p>
+        <p className="text-xl">I hope you like what i've done with the place.</p>
         <br></br>
-        <p className="text-xl">Lots of empty space</p>
+        <p className="text-xl">Lots of empty space.</p>
         <br></br>
         <p className="text-xl">
-          I've been a software engineer for 6 years. Mostly backend but i've also had experience in
-          full stack and data engineering roles. Outside of work I am into running, cycling, and
-          electronic music.
+          I've been a software engineer for 6 years, coding for 10, and have worked at Google,
+          Strava, and now Spotify. Most of that time has been spent doing backend work but i've also
+          had experience in full stack and data engineering roles.
         </p>
         <br></br>
-        <p className="text-xl">Catch me in Brooklyn if you're ever around</p>
+        <p className="text-xl">Outside of work I am into running, cycling, and electronic music.</p>
+        <br></br>
+        <p className="text-xl">Catch me in Brooklyn if you're ever around!</p>
         <br></br>
         <p className="text-xl">
           Here's my{" "}
