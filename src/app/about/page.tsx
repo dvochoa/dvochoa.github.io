@@ -39,6 +39,7 @@ export default function HomePage() {
           ></LinkWithUnderlineAnimated>{" "}
           ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
         </p>
+        <br></br>
       </main>
     </div>
   );

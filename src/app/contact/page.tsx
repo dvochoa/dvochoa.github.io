@@ -16,17 +16,17 @@ export default function ContactPage() {
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-      <SectionsHeader className="row-start-2 col-start-2 lg:col-start-3 justify-self-center" />
+      <SectionsHeader className="justify-self-center row-start-2 lg:col-start-3" />
 
-      <div className="row-start-3 col-start-2 grid grid-cols-3 lg:grid-cols-1">
-        <main className="text-center col-start-2 lg:col-start-1">
+      <div className="grid row-start-3 grid-cols-9 lg:grid-cols-1 lg:col-start-1 lg:col-span-3 lg:justify-self-center">
+        <main className="text-center col-start-5 lg:col-start-1">
           <Link href="mailto:danny@dannyochoa.net" target="_blank" rel="noopener noreferrer">
             <Image
               src="/images/gmail-icon.svg"
               width={iconWidth}
               height={iconHeight}
               alt="Mail icon"
-              className={styles["contact-icon"]}
+              className={`${styles["contact-icon"]} lg:mx-1`}
             />
           </Link>
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="GitHub icon"
-              className={styles["contact-icon"]}
+              className={`${styles["contact-icon"]} lg:mx-1`}
             />
           </Link>
 
@@ -50,7 +50,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="LinkedIn icon"
-              className={styles["contact-icon"]}
+              className={`${styles["contact-icon"]} lg:mx-1`}
             />
           </Link>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="Strava icon"
-              className={styles["contact-icon"]}
+              className={`${styles["contact-icon"]} lg:mx-1`}
             />
           </Link>
         </main>
