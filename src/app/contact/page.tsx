@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import styles from "./contact.module.css";
 import SectionsHeader from "@/components/sections-header";
+import ThemeToggle from "@/components/theme-toggle";
 
 const iconWidth = 60;
 const iconHeight = 60;
@@ -15,6 +16,7 @@ export default function ContactPage() {
     <div className={`${styles["grid-container"]} h-lvh grid lg:grid-cols-3`}>
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <ThemeToggle />
 
       <SectionsHeader className="justify-self-center row-start-2 lg:col-start-3" />
 
@@ -26,7 +28,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="Mail icon"
-              className={`${styles["contact-icon"]} lg:mx-1`}
+              className={`${styles["contact-icon"]} lg:mx-1 dark:invert dark:brightness-100`}
             />
           </Link>
 
@@ -36,7 +38,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="GitHub icon"
-              className={`${styles["contact-icon"]} lg:mx-1`}
+              className={`${styles["contact-icon"]} lg:mx-1 dark:invert dark:brightness-100`}
             />
           </Link>
 
@@ -50,7 +52,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="LinkedIn icon"
-              className={`${styles["contact-icon"]} lg:mx-1`}
+              className={`${styles["contact-icon"]} lg:mx-1 dark:hover:invert dark:invert dark:brightness-100`}
             />
           </Link>
 
@@ -64,7 +66,7 @@ export default function ContactPage() {
               width={iconWidth}
               height={iconHeight}
               alt="Strava icon"
-              className={`${styles["contact-icon"]} lg:mx-1`}
+              className={`${styles["contact-icon"]} lg:mx-1 dark:hover:invert dark:invert dark:brightness-100`}
             />
           </Link>
         </main>

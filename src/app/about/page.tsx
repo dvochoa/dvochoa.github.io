@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import styles from "./about.module.css";
 import SectionsHeader from "@/components/sections-header";
 import LinkWithUnderlineAnimated from "@/components/link-with-underline-animated";
+import ThemeToggle from "@/components/theme-toggle";
 
 export const metadata: Metadata = { title: "About Me" };
 
@@ -11,7 +12,10 @@ export default function HomePage() {
     <div className={`${styles["grid-container"]} h-lvh grid`}>
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <ThemeToggle />
+
       <SectionsHeader className="row-start-2 col-start-2 lg:col-start-4 justify-self-center" />
+
       <main className="row-start-3 col-start-2 lg:col-start-2">
         <h1 className="text-4xl font-bold">Hey ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h1>
         <br></br>
