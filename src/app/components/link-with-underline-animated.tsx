@@ -16,7 +16,7 @@ const LinkWithUnderlineAnimated = ({
     <Link
       href={href}
       target={openInNewTab ? "_blank" : undefined}
-      className={`${styles.link} font-bold inline-block relative ${className}`}
+      className={`${styles.link} font-bold inline-block relative after:bg-black dark:after:bg-white ${className}`}
     >
       {text}
     </Link>
