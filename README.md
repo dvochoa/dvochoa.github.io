@@ -6,6 +6,8 @@ My personal website, available at [www.dannyochoa.net](www.dannyochoa.net).
 
 Built using [NextJS](https://nextjs.org/) and TypeScript along with CSS grid for a responsive design and [tailwind](https://tailwindcss.com/) for easy in-line styling.
 
+After initial download you'll want to run `npm install` to install all dependencies locally. These will be available in the `node_modules` directory.
+
 Use the following scripts during development:
 
 - Run `npm run dev` to start a local instance of the web application on `localhost:3000`.
@@ -23,3 +25,11 @@ Several Github Action Workflows are set up that affect development:
 This website is hosted using [Github Pages](https://pages.github.com/).
 
 The [nextjs.yml](https://github.com/dvochoa/dvochoa.github.io/blob/main/.github/workflows/nextjs.yml) workflow triggers a deployment when changes are merged into main. The status of this action and others are visible in the [Actions tab](https://github.com/dvochoa/dvochoa.github.io/actions) of the repo.
+
+## Troubleshooting
+
+If you experience issues that might be related to cached files (e.g. styling or other content representing previous changes) then try the following:
+
+1. Delete your local `node_modules` and `.next` directories: `rm -rf node_modules .next`
+2. Reinstall: `npm install`
+3. Re-run: `npm run dev`
