@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "jest"
