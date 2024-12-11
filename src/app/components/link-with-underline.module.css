@@ -1,0 +1,31 @@
+.selected {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Large screens (laptops, desktops) */
+@media (min-width: 1024px) {
+  /* Remove underline since larger screens use an on hover underline instead */
+  .selected {
+    text-decoration-line: none;
+  }
+
+  /* Apply an animated underline on hover */
+  .link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

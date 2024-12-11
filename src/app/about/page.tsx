@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import styles from "./about.module.css";
 import SectionsHeader from "@/components/sections-header";
-import LinkWithUnderlineAnimated from "@/components/link-with-underline-animated";
+import LinkWithUnderline from "@/components/link-with-underline";
 import ThemeToggle from "@/components/theme-toggle";
 
 export const metadata: Metadata = { title: "About Me" };
@@ -14,7 +14,10 @@ export default function HomePage() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <ThemeToggle />
 
-      <SectionsHeader className="row-start-2 col-start-2 lg:col-start-4 justify-self-center" />
+      <SectionsHeader
+        className="row-start-2 col-start-2 lg:col-start-4 justify-self-center"
+        selectedIndex={1}
+      />
 
       <main className="row-start-3 col-start-2 lg:col-start-2">
         <h1 className="text-4xl font-bold">Hey ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h1>
@@ -36,11 +39,12 @@ export default function HomePage() {
         <br></br>
         <p className="text-xl">
           Here's my{" "}
-          <LinkWithUnderlineAnimated
+          <LinkWithUnderline
             href="/documents/resume.pdf"
             text="resume"
             openInNewTab={true}
-          ></LinkWithUnderlineAnimated>{" "}
+            selected={true}
+          ></LinkWithUnderline>{" "}
           ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
         </p>
         <br></br>

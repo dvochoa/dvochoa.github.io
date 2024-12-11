@@ -18,7 +18,10 @@ export default function ContactPage() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <ThemeToggle />
 
-      <SectionsHeader className="justify-self-center row-start-2 lg:col-start-3" />
+      <SectionsHeader
+        className="justify-self-center row-start-2 lg:col-start-3"
+        selectedIndex={2}
+      />
 
       <div className="grid row-start-3 grid-cols-9 lg:grid-cols-1 lg:col-start-1 lg:col-span-3 lg:justify-self-center">
         <main className="text-center col-start-5 lg:col-start-1">
