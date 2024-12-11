@@ -1,25 +1,34 @@
-import LinkWithUnderlineAnimated from "@/components/link-with-underline-animated";
+import LinkWithUnderline from "@/components/link-with-underline";
 
-const SectionsHeader = ({ className }: { className: string }) => {
+const SectionsHeader = ({
+  className,
+  selectedIndex,
+}: {
+  className: string;
+  selectedIndex: number;
+}) => {
   return (
     <div className={className}>
-      <LinkWithUnderlineAnimated
+      <LinkWithUnderline
         href="/"
         text="Home"
         openInNewTab={false}
         className="mr-4"
-      ></LinkWithUnderlineAnimated>
-      <LinkWithUnderlineAnimated
+        selected={selectedIndex == 0}
+      ></LinkWithUnderline>
+      <LinkWithUnderline
         href="/about"
         text="About"
         openInNewTab={false}
         className="mr-4"
-      ></LinkWithUnderlineAnimated>
-      <LinkWithUnderlineAnimated
+        selected={selectedIndex == 1}
+      ></LinkWithUnderline>
+      <LinkWithUnderline
         href="/contact"
         text="Contact"
         openInNewTab={false}
-      ></LinkWithUnderlineAnimated>
+        selected={selectedIndex == 2}
+      ></LinkWithUnderline>
     </div>
   );
 };
