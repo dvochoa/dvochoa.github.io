@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import styles from "./page.module.css";
-import SectionsHeader from "./components/sections-header";
+import { Section, SectionsHeader } from "./components/sections-header";
 import ThemeToggle from "./components/theme-toggle";
 
 export const metadata: Metadata = { title: "Home" };
@@ -15,7 +15,7 @@ export default function HomePage() {
 
       <SectionsHeader
         className="row-start-2 lg:col-start-3 justify-self-center"
-        selectedIndex={0}
+        selectedSection={Section.Home}
       />
 
       <main className="row-start-3 lg:col-start-2 text-center">

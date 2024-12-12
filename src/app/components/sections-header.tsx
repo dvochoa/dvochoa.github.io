@@ -1,11 +1,17 @@
 import LinkWithUnderline from "@/components/link-with-underline";
 
-const SectionsHeader = ({
-  className,
-  selectedIndex,
+export enum Section {
+  Home,
+  About,
+  Contact,
+}
+
+export const SectionsHeader = ({
+  className = "",
+  selectedSection,
 }: {
-  className: string;
-  selectedIndex: number;
+  className?: string;
+  selectedSection: Section;
 }) => {
   return (
     <div className={className}>
@@ -14,23 +20,21 @@ const SectionsHeader = ({
         text="Home"
         openInNewTab={false}
         className="mr-4"
-        selected={selectedIndex == 0}
+        selected={selectedSection == Section.Home}
       ></LinkWithUnderline>
       <LinkWithUnderline
         href="/about"
         text="About"
         openInNewTab={false}
         className="mr-4"
-        selected={selectedIndex == 1}
+        selected={selectedSection == Section.About}
       ></LinkWithUnderline>
       <LinkWithUnderline
         href="/contact"
         text="Contact"
         openInNewTab={false}
-        selected={selectedIndex == 2}
+        selected={selectedSection == Section.Contact}
       ></LinkWithUnderline>
     </div>
   );
 };
-
-export default SectionsHeader;

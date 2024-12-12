@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 import styles from "./about.module.css";
-import SectionsHeader from "@/components/sections-header";
+import { Section, SectionsHeader } from "@/components/sections-header";
 import LinkWithUnderline from "@/components/link-with-underline";
 import ThemeToggle from "@/components/theme-toggle";
 
 export const metadata: Metadata = { title: "About Me" };
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <div className={`${styles["grid-container"]} h-lvh grid`}>
       <meta charSet="utf-8"></meta>
@@ -16,7 +16,7 @@ export default function HomePage() {
 
       <SectionsHeader
         className="row-start-2 col-start-2 lg:col-start-4 justify-self-center"
-        selectedIndex={1}
+        selectedSection={Section.About}
       />
 
       <main className="row-start-3 col-start-2 lg:col-start-2">

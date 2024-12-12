@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./contact.module.css";
-import SectionsHeader from "@/components/sections-header";
+import { Section, SectionsHeader } from "@/components/sections-header";
 import ThemeToggle from "@/components/theme-toggle";
 
 const iconWidth = 60;
@@ -20,7 +20,7 @@ export default function ContactPage() {
 
       <SectionsHeader
         className="justify-self-center row-start-2 lg:col-start-3"
-        selectedIndex={2}
+        selectedSection={Section.Contact}
       />
 
       <div className="grid row-start-3 grid-cols-9 lg:grid-cols-1 lg:col-start-1 lg:col-span-3 lg:justify-self-center">
