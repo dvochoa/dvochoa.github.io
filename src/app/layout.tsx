@@ -1,5 +1,6 @@
 import { ThemeProvider } from "next-themes";
 import "@/styles/global.css";
+import ThemeToggle from "./components/theme-toggle";
 
 export const metadata = {
   description: "Danny Ochoa's personal website",
@@ -17,6 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <ThemeToggle />
+
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>

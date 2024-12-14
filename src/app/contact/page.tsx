@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import styles from "./contact.module.css";
 import { Section, SectionsHeader } from "@/components/sections-header";
-import ThemeToggle from "@/components/theme-toggle";
+// import ThemeToggle from "@/components/theme-toggle";
 
 const iconWidth = 60;
 const iconHeight = 60;
@@ -16,7 +16,7 @@ export default function ContactPage() {
     <div className={`${styles["grid-container"]} h-lvh grid lg:grid-cols-3`}>
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
 
       <SectionsHeader
         className="justify-self-center row-start-2 lg:col-start-3"
