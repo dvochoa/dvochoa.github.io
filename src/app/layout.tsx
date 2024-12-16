@@ -14,14 +14,19 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+// TODO: Pages wrap everything in the imported Layout
+// TODO: Pages pass in their specific grid to each layout
+// TODO: Make sure the styling looks identical to prod
+const Layout = ({ children, gridClass }: { children: React.ReactNode; gridClass: string }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={gridClass}>
         <ThemeToggle />
 
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>
   );
-}
+};
+
+export default Layout;
