@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import styles from "./page.module.css";
 import { Section, SectionsHeader } from "./components/sections-header";
-import ThemeToggle from "./components/theme-toggle";
 
 export const metadata: Metadata = { title: "Home" };
 
@@ -11,8 +10,6 @@ export default function HomePage() {
     <div className={`${styles["grid-container"]} h-lvh grid lg:grid-cols-3`}>
       <meta charSet="utf-8"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <ThemeToggle />
-
       <SectionsHeader
         className="row-start-2 lg:col-start-3 justify-self-center"
         selectedSection={Section.Home}
