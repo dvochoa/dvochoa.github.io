@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import styles from "./page.module.css";
-import { Section, SectionsHeader } from "./components/sections-header";
-import ThemeToggle from "./components/theme-toggle";
+import { Section, SectionsHeader } from "@/components/sections-header";
+import ThemeToggle from "@/components/theme-toggle";
 
 export const metadata: Metadata = { title: "Home" };
 
