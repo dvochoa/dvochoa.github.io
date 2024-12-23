@@ -1,5 +1,6 @@
-import styles from "./link-with-underline.module.css";
 import Link from "next/link";
+
+import styles from "./link-with-underline.module.css";
 
 const LinkWithUnderline = ({
   href,
