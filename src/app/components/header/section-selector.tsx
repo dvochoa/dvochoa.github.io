@@ -1,20 +1,15 @@
-import LinkWithUnderline from "@/components/link-with-underline";
+import LinkWithUnderline from "@/components/link-with-underline/link-with-underline";
 
 export enum Section {
+  Unknown,
   Home,
   About,
   Contact,
 }
 
-export const SectionsHeader = ({
-  className = "",
-  selectedSection,
-}: {
-  className?: string;
-  selectedSection: Section;
-}) => {
+export const SectionSelector = ({ selectedSection }: { selectedSection: Section }) => {
   return (
-    <div className={className}>
+    <div>
       <LinkWithUnderline
         href="/"
         text="Home"

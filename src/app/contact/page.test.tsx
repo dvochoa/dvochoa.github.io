@@ -8,6 +8,6 @@ describe("contact page", () => {
 
     const images = screen.getAllByRole("img");
 
-    expect(images.length).toBe(5);
+    expect(images.length).toBe(4);
   });
 });
