@@ -1,25 +1,13 @@
 import type { Metadata } from "next";
 
-import styles from "./about.module.css";
-import { Section, SectionsHeader } from "@/components/sections-header";
-import LinkWithUnderline from "@/components/link-with-underline";
-import ThemeToggle from "@/components/theme-toggle";
+import LinkWithUnderline from "@/components/link-with-underline/link-with-underline";
 
 export const metadata: Metadata = { title: "About Me" };
 
 export default function AboutPage() {
   return (
-    <div className={`${styles["grid-container"]} h-lvh grid`}>
-      <meta charSet="utf-8"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <ThemeToggle />
-
-      <SectionsHeader
-        className="row-start-2 col-start-2 lg:col-start-4 justify-self-center"
-        selectedSection={Section.About}
-      />
-
-      <main className="row-start-3 col-start-2 lg:col-start-2">
+    <div className="w-full p-[8vh] md:pl-[15vw] md:pr-[30vw] lg:pr-[50vw] md:pt-[15vh]">
+      <main>
         <h1 className="text-4xl font-bold">Hey ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h1>
         <br></br>
         <p className="text-xl">Thank you for visiting my website,</p>

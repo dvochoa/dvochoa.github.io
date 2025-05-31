@@ -7,7 +7,7 @@ const LinkWithUnderline = ({
   text,
   openInNewTab,
   className = "",
-  selected = false,
+  selected = false, // Permanently sets an underline, disabled on larger screens
 }: {
   href: string;
   text: string;

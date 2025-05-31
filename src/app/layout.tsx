@@ -1,6 +1,5 @@
-import { ThemeProvider } from "next-themes";
-
 import "@/styles/global.css";
+import Header from "./components/header/header";
 
 export const metadata = {
   description: "Danny Ochoa's personal website",
@@ -17,8 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+      <body className="flex flex-col h-screen">
+        <Header />
+        <main className="flex grow">{children}</main>
       </body>
     </html>
   );
