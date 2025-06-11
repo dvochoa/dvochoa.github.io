@@ -4,7 +4,7 @@ My personal website, available at [www.dannyochoa.net](www.dannyochoa.net).
 
 ## Development
 
-Built using [NextJS](https://nextjs.org/) and TypeScript along with CSS grid for a responsive design and [tailwind](https://tailwindcss.com/) for easy in-line styling.
+Built using [NextJS](https://nextjs.org/), TypeScript, and [tailwind](https://tailwindcss.com/).
 
 After initial download you'll want to run `npm install` to install all dependencies locally. These will be available in the `node_modules` directory.
 
